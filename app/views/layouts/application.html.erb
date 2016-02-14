@@ -95,12 +95,6 @@
                     <li>
                          <%= link_to 'GALLERY', controller: 'galleries' %>
                     </li>
-                    <li>
-                        <%= link_to 'CONTACT', controller: 'contacts' %>
-                    </li>
-                    <li>
-                        <%= link_to 'SPONSORS', controller: 'sponsors' %>
-                    </li>
 
                 </ul>
             </div>
@@ -116,13 +110,23 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
+                    <span class="copyright">UC Berkeley Phi Sigma Rho 2016</span>
                 </div>
                 <div class="col-md-4">
                     <ul class="list-inline social-buttons">
-                        <span class="copyright">UC Berkeley Phi Sigma Rho 2016</span><br />
                         <li><a href="https://www.facebook.com/calphisigmarho/"><i class="fa fa-facebook"></i></a>
                         </li>
+                        <li><a href="#page-top"><i class="fa fa-arrow-up"></i></a>
+                        </li>
                         <li><a href="mailto:calphisigmarho@gmail.com"><i class="fa fa-envelope-o"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline quicklinks">
+                        <li><%= link_to 'Sponsors', controller: 'sponsors' %>
+                        </li> //
+                        <li><%= link_to 'Contact Us', controller: 'contacts' %>
                         </li>
                     </ul>
                 </div>
